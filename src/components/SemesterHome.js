@@ -95,7 +95,7 @@ function SemesterHome() {
                                     enable: true,
                                     minimumValue: 0.5,
                                 },
-                                value: 1.4,
+                                value: 2.4,
                             },
                             color: {
                                 value: "#f1f1f1",
