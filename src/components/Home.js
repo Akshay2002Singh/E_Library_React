@@ -32,7 +32,7 @@ function Home() {
             background: {
               color: "rgb(10,10,25)",
             },
-            fpsLimit: 60,
+            fpsLimit: 120,
             particles: {
               shape: {
                 type: "circle",
@@ -53,7 +53,7 @@ function Home() {
                   area: 1080,
                 },
                 limit: 0,
-                value: 800,
+                value: 600,
               },
               opacity: {
                 animation: {
