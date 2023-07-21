@@ -26,7 +26,7 @@ function Developer() {
             <div className="card-client" key={index}>
                 <a href={dev.github} target="_blank" className="card_link">
                     <div className="user-picture">
-                        <img src={process.env.PUBLIC_URL + 'images/developers/' + dev.image + '.' + dev.image_type} alt="poprtfolio" />
+                        <img src={process.env.PUBLIC_URL + '/images/developers/' + dev.image + '.' + dev.image_type} alt="poprtfolio" />
                     </div>
                     <p className="name-client">{dev.name}
                         <span>{dev.post ? dev.post : "Contributor"}

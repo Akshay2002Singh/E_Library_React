@@ -6,12 +6,14 @@ import '../css/BooksPage.css'
 
 
 function Books(props) {
-    console.log(props.category)
+    console.log(`${process.env.PUBLIC_URL}/books_data/${props.category}.json`)
     const [book_arr,setBook] = useState([])
     useEffect(() => {
-        fetch(`/books_data/${props.category}.json`)
+        // fetch(`/books_data/${props.category}.json`)
+        fetch(`${process.env.PUBLIC_URL}/books_data/${props.category}.json`)
             .then(response => {
                 return response.json()
+                // return response;
             }).then(daTa => {
                 setBook(daTa);
                 console.log(daTa)
