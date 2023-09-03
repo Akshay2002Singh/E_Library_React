@@ -39,6 +39,7 @@ body {
     margin: auto;
     margin-bottom: 20px;
     justify-content: space-around;
+    background-color: transparent;
 }
 
 .card {

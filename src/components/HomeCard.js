@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function HomeCard(props) {
   return (
     <div className="card">
             <h2>{props.year} Year</h2>
-            <a href={props.url}>
+            <Link to={props.url}>
                 <button className="cssbuttons-io-button"> Get started
                     <div className="icon">
                         <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +15,7 @@ function HomeCard(props) {
                         </svg>
                     </div>
                 </button>
-            </a>
+            </Link>
         </div>
   )
 }
