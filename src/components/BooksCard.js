@@ -9,7 +9,8 @@ function BooksCard(props) {
         </div>
         <span className="book_card__content_text">{props.name}</span>
         <div className="book_btn_holder">
-          <a href={process.env.PUBLIC_URL + '/pdfbooks/' + props.url} target="blank">
+          <a href={props.url} target="blank">
+          {/* <a href={process.env.PUBLIC_URL + '/pdfbooks/' + props.url} target="blank"> */}
             <button className="book_cssbuttons-io-button">
               <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h24v24H0z" fill="none"></path>
